@@ -1,0 +1,20 @@
+version: 2
+
+jobs:
+  run_tests:
+    docker:
+      - image: node
+    steps:
+      - checkout
+      - run:
+          name: Install npm dependencies
+          command: npm install
+      - run:
+          name: Run tests
+          command: npm run all-chapters
+
+workflows:
+  version: 2
+  tests:
+    jobs:
+      - run_tests
