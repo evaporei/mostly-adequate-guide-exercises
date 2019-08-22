@@ -25,7 +25,7 @@
   },
   "scripts": {
     "test": "mocha test/*.solutions.js",
-    "all-chapters": "mocha test/ch04.js test/ch05.js test/ch07.js test/ch08.js test/ch09.js test/ch10.js test/ch11.js test/ch12.js",
+    "all-chapters": "mocha test/ch04.js test/ch05.js test/ch08.js test/ch09.js test/ch10.js test/ch11.js test/ch12.js",
     "lint": "eslint .",
     "ch04": "mocha test/ch04.js",
     "ch05": "mocha test/ch05.js",
