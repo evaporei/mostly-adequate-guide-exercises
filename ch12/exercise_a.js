@@ -9,4 +9,6 @@
 //   getJsons :: Map Route Route -> Task Error (Map Route JSON)
 
 // getJsons :: Map Route Route -> Map Route (Task Error JSON)
-const getJsons = map(httpGet);
+const getJsons = traverse(Task.of, httpGet);
+
+// wow, the traversable interface is actually neat :O
